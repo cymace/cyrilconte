@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+#visuel-profil {
+    width: 140px;
+    margin-right: 20px;
+}
+
+.site-title {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+nav.site-nav {
+    flex-grow: 10;
+    text-align: right;
+    text-decoration: underline;
+
+    a:hover {
+        font-weight: bold;
+    }
+}
+
+@include media-query($on-palm) {
+    .flex-container {
+        display: block;
+        text-align: center;
+    }
+}

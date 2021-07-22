@@ -1,0 +1,12 @@
+# Site settings
+title: Cyril conte
+email: bonjour@cyrilconte.com
+sass:
+    load_paths:
+        - css
+collections:
+  projets :
+    name: true
+    desc: true
+    duree: true
+    public: true

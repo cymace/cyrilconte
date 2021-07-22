@@ -1,0 +1,17 @@
+---
+title: projets
+layout: default
+---
+
+
+{% for projet in site.projets %}
+<section class="flex-container projet">
+    <img src="/medias/projets//{{projet.img}}" alt="" width="200">
+    <section>
+        <h2>{{ projet.name }}</h2>
+        <h3>{{ projet.desc }} - {{projet.duree}} ({{projet.public)}})</h3>
+        <p>{{ projet.content | markdownify }}</p>
+    </section>
+</section>
+  
+{% endfor %}
