@@ -6,7 +6,8 @@ public: tout public
 img: les choses que l'on ne voit pas.jpg
 ---
 
-C'est l'histoire d'un homme qui avance, d'une femme qui attend, d'un village qui déménage, d'oranges qui murmurent, de gens qui arrivent, et d'autres qui partent...
+Il y a des choses qui ne s'expliquent pas, que l'on ne voit pas et pourtant...
 
+Ils peuvent prendre différents noms selon les régions : farfadets, korrigans, tomtes,...et ils sont capables du meilleur  comme du pire.
 
-Des histoires nomades serviront de préambule à ce spectacle, avec une ensemble sous le signe du voyage
+Quelques contes vont mettre en lumière ces êtres du petit peuple.
