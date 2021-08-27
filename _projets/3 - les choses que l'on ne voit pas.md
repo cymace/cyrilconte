@@ -1,7 +1,7 @@
 ---
 name: Les choses que l'on ne voit pas - à venir
 desc: Spectacle conte
-duree: 1h15
+duree: 1h
 public: tout public 
 img: les choses que l'on ne voit pas.jpg
 ---
