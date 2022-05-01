@@ -10,3 +10,7 @@ collections:
     desc: true
     duree: true
     public: true
+  chansons :
+    name: true
+    desc: true
+    duree: true

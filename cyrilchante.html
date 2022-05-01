@@ -1,0 +1,25 @@
+---
+title: Cyril chante
+layout: default
+---
+
+
+Quelques petites chansons sorties de ma tête
+
+{% for chanson in site.chansons %}
+<section class="flex-container projet">
+    
+<section>
+    <h2>{{ chanson.name }}</h2>
+    {% include audio.html file=chanson.media %}
+    
+    
+    <!-- <audio controls>
+        <source src="/medias/audio/{{chanson.media}}" type="audio/x-m4a">
+      Your browser does not support the audio element.
+    </audio>
+    -->
+    </section>
+</section>
+  
+{% endfor %}
