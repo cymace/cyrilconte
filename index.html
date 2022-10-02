@@ -5,14 +5,58 @@ layout: default
 
 
 
-Bienvenue à toi qui aimes les histoires !<br> 
-Des histoires pour tous les ages...<br>
-Qui font voyager, réfléchir, rire et/ou pleurer...<br>
-Parfois facilement compréhensibles,  parfois à prendre telles quelles...<br><br>
-
-
-<img src="/medias/visuel_spectacle_solo_sans_guitare.jpeg" alt=""><br><br>
-
+Bienvenue !<br> 
 Envie d'échanger autour du conte ? D'accueillir des histoires chez vous ? <br>
-N'hésitez pas à me contacter ou à regarder mes <a href="/projets">projets en cours</a> !
+N'hésitez pas à <a href="#footer">me contacter</a> ou à regarder mes <a href="/projets">projets en cours</a> !
+<br><br>
+
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="/medias/visuel_spectacle_solo_sans_guitare.jpeg" alt=""><br></div>
+      <div class="swiper-slide"><img src="/medias/visuel_chute_libre.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/medias/visuel-selection-bogue.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="/medias/visuel_spectacle_solo_guitare.jpeg" alt=""></div>
+      
+      
+    </div>
+     <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script defer>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          780: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</div>
+
+
+
+
+
 
