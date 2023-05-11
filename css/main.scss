@@ -1,5 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter
 ---
 @charset "utf-8";
 
@@ -55,9 +55,10 @@ $on-laptop:        800px;
 
 
 body{
-   //background-image : url("/medias/bg.jpg");
-    //background-size: cover;
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     nav a{
         color : white !important;
     }
@@ -112,4 +113,9 @@ main nav ul{
             margin-bottom: 30px;
         }
     }
+}
+
+.important{
+    text-shadow: 1px 1px black;
+    font-size: 20px;
 }

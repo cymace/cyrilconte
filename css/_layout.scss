@@ -73,10 +73,29 @@
 /**
  * Site footer
  */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+ .site-footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 2;
+    
+
+    .site-footer {
+        background-color: black;
+        color: white;
+        padding : 20px;
+        border-top: 0.5px solid $grey-color-light;
+        font-size: 22px;
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+                text-shadow: 0.2px 0.2px white;
+            }
+        }
+        
+    }
 }
+
 
 .footer-heading {
     font-size: 18px;
