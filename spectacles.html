@@ -1,17 +1,23 @@
 ---
-title: projets
+title: spectacles
 layout: default
 ---
 
 
 {% for projet in site.projets %}
+
 <section class="flex-container projet">
-    <img src="/medias/projets//{{projet.img}}" alt="" width="200">
+    <a href="{{projet.url}}" class="link-wrapper">
+        <img src="/medias/projets/{{projet.img}}" alt="" width="200">
+    </a>
     <section>
-        <h2>{{ projet.name }}</h2>
+        <a href="{{projet.url}}" class="link-wrapper">
+            <h2>{{ projet.name }}</h2>
+        </a>
         <h3>{{ projet.desc }} - {{projet.duree}} ({{projet.public}})</h3>
         <p>{{ projet.content | markdownify }}</p>
     </section>
 </section>
+</a>
   
 {% endfor %}

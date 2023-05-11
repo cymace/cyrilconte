@@ -52,3 +52,64 @@ $on-laptop:        800px;
         "header",
         "projets"
 ;
+
+
+body{
+   //background-image : url("/medias/bg.jpg");
+    //background-size: cover;
+    color: white;
+    nav a{
+        color : white !important;
+    }
+}
+
+
+body > img{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    object-fit : cover;
+    z-index: -1;
+}
+.main-section{
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    a{
+        color: black !important;
+        text-decoration: underline;
+    }
+}
+
+main.black-background{ 
+    font-size : 26px;
+}
+
+main nav ul{ 
+    margin-top: 20vh;
+    font-size: 42px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    list-style: none;
+
+    a{
+        text-shadow: 2px 2px black;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+            text-shadow: 4px 4px black;
+        }
+    }
+}
+
+@include media-query($on-palm) {
+    main nav ul{
+        display : block;
+        text-align: center;
+        margin-top: 0;
+        li{
+            margin-bottom: 30px;
+        }
+    }
+}

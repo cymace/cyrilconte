@@ -1,9 +1,11 @@
 ---
-name: Contes et chansons tirées du sac - en cours
+name: Contes et chansons tirées du sac
+permalink: /spectacle/contes-et-chansons-tirees-sac
 desc: florilège de chansons et d'histoires
 duree: variable
-public: tout public 
+public: à partir de 5 ans
 img: contes-et-chansons-tirees-sac.jpg
+layout: projet
 ---
 
 Histoires et chansons choisies en fonction du contexte, du lien, de l'auditoire.

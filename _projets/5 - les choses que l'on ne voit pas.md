@@ -1,9 +1,11 @@
 ---
 name: Les choses que l'on ne voit pas - à venir
+permalink: /spectacle/ce-quon-ne-voit-pas
 desc: Spectacle conte
-duree: 1h
-public: tout public 
+duree: 50 min
+public: à partir de 8 ans 
 img: les choses que l'on ne voit pas.jpg
+layout: projet
 ---
 
 Il y a des choses qui ne s'expliquent pas, que l'on ne voit pas et pourtant...

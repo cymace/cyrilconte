@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <img src="/medias/bg.jpg">
+    {% include header.html %}
+
+    
+
+    <main class="page-content">
+
+        <!-- <nav class="wrapper">
+            <a href="/spectacles"> voir tous les spectacles</a>
+        </nav> -->
+        
+      <div class="wrapper main-section">
+       
+        <section class="flex-container projet">
+            <img src="/medias/projets//{{page.img}}" alt="" width="200">
+            <section>
+                <h2>{{ page.name }}</h2>
+                <h3>{{ page.desc }} - {{page.duree}} ({{page.public}})</h3>
+                <p>{{ page.content | markdownify }}</p>
+            </section>
+        </section>
+      </div>
+    </main>
+
+
+    
+
+  </body>
+
+</html>

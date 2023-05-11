@@ -3,27 +3,17 @@
   <div class="wrapper">
 
     <div class="flex-container">
-      <img src="/medias/visuel_profil.jpg" alt="profil" title="crédit dessin : Fanny Legrand (http://fannylegrand.fr/)" id="visuel-profil">
+      <a href="/" class="link-wrapper" id="visuel-profil">
+        <img src="/medias/visuel_profil.jpg" alt="profil" title="crédit dessin : Fanny Legrand (http://fannylegrand.fr/)" >
+      </a>
+      
       <div>
-        {% if page.title == "accueil" %}
         <h1 class="site-title">{{ site.title }}</h1>
         <h2>Histoires logiques et absurdes </h2>
-        {% endif %}
-
-        {% if page.title == "projets" %}
-        <h1 class="site-title">{{ site.title }}</h1>
-        <h2>Projets passés, en cours, ou à venir!</h2>
-        {% endif %}
-
-        {% if page.title == "Cyril chante" %}
-        <h1 class="site-title">{{ site.title }}</h1>
-        <h2>et chante aussi </h2>
-        {% endif %}
 
         
        
       </div>
-
       <nav class="site-nav">
         <a href="#" class="menu-icon">
           <svg viewBox="0 0 18 15">
@@ -35,21 +25,11 @@
 
 
       <div class="trigger">
-        {% if page.title == "accueil" %}
-        <a class="page-link" href="/projets">voir mes projets</a>
-        <a class="page-link" href="/cyrilchante">cyril chante</a>
-        {% endif %}
-        {% if page.title == "projets" %}
-        <a class="page-link" href="/">accueil</a>
-        <a class="page-link" href="/cyrilchante">cyril chante</a>
-        {% endif %}
-        {% if page.title == "Cyril chante" %}
-        <a class="page-link" href="/">accueil</a>
-        <a class="page-link" href="/projets">voir mes projets</a>
-        {% endif %}
+        <a class="page-link {% if page.title == 'spectacles' %} active{% endif %} " href="/spectacles" >spectacles</a>
+        <a class="page-link {% if page.title == 'portrait' %} active{% endif %}" href="/portrait">portrait</a>
+        <a class="page-link {% if page.title == 'contact' %}  active{% endif %}" href="/contact">contact</a>
       </div>
     </nav>
-      
     </div>
    
 

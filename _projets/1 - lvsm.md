@@ -1,9 +1,11 @@
 ---
-name: Le vent s'en mêle  - passé
+name: Le vent s'en mêle
+permalink: /spectacle/le-vent-sen-mele
 desc: Spectacle musical, conté et dansé
 duree: 45 minutes
-public: tout public 
+public: à partir de 6 ans
 img: lvsm.jpg
+layout: projet
 ---
 Le projet a été créé avec [Emmanuelle Le Diuzet](https://www.facebook.com/people/Cie-Les-Grillons-A-LOuest/100054202149872/){:target="_blank"} et joué sur la période 2018-2020
 
