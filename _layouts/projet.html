@@ -19,14 +19,23 @@
       <div class="wrapper main-section">
        
         <section class="flex-container projet">
+          
             <img src="/medias/projets//{{page.img}}" alt="" width="200">
-            <section>
+              <section>
                 <h2>{{ page.name }}</h2>
                 <h3>{{ page.desc }} - {{page.duree}} ({{page.public}})</h3>
                 <p>{{ page.content | markdownify }}</p>
             </section>
         </section>
+        {% if page.extrait %}
+
+            <section>
+              <h2>Extrait</h2>
+              <iframe width="420" height="265" src="{{page.extrait}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            {% endif %}
       </div>
+      
     </main>
 
 

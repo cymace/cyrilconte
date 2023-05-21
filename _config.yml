@@ -11,6 +11,7 @@ collections:
     duree: true
     public: true
     output: true
+    extrait : true
   chansons :
     name: true
     desc: true
