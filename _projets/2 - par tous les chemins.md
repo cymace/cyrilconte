@@ -9,6 +9,7 @@ layout: projet
 extrait : https://www.youtube.com/embed/J4A7Dwb5d64
 test : /medias/par-tous-les-chemins.mp4
 ---
-Zelig veut visiter Varsovie, Jean ne peut pas s'arrêter, Yvonne se souvient, Sarah fait des détours, un village déménage, des oranges murmurent, de gens arrivent, pendant que d’autres partent…
-
-Chaque voyage a sa raison, et chaque chemin son histoire
+Quelques maisons colorées, un bourg qui prend toute la place.<br>
+C'est un village entre les chemins, à la croisée des histoires de ceux qui y passent.<br>
+Jean avance la tête baissée, Félix veut aller vivre ailleurs, Yvonne part au bout du monde.<br>
+Chaque voyage a sa raison, et chaque chemin son histoire.
