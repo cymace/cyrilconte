@@ -25,8 +25,17 @@
                 <h2>{{ page.name }}</h2>
                 <h3>{{ page.desc }} - {{page.duree}} ({{page.public}})</h3>
                 <p>{{ page.content | markdownify }}</p>
+                {% if page.plaquette %}
+
+            <div>
+              <img src="/medias/file.svg" width="24">
+               <a href="{{page.plaquette}}" target="_blank">Dossier de présentation</a>
+            </div>
+            {% endif %}
             </section>
         </section>
+
+
         {% if page.extrait %}
 
             <section>
