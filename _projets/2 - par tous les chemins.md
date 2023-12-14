@@ -2,7 +2,7 @@
 name: Par tous les chemins
 permalink: /spectacle/par-tous-les-chemins
 desc: Spectacle conte et musique
-duree: 45 min
+duree: 55 min
 public: adultes et enfants à partir de 7 ans
 img: affiche-par-tous-les-chemins.jpg
 layout: projet
