@@ -10,7 +10,7 @@ extrait : https://www.youtube.com/embed/HvtYFBIZcbA
 plaquette : /medias/dossier-presentation-par-tous-les-chemins.pdf
 test : 
 ---
-Quelques maisons colorées, un bourg qui prend toute la place.<br>
-C'est un village entre les chemins, à la croisée des histoires de ceux qui y passent.<br>
-Jean avance la tête baissée, Félix veut aller vivre ailleurs, Yvonne part au bout du monde.<br>
-Chaque voyage a sa raison, et chaque chemin son histoire.
+Jean, ca fait longtemps qu’il met du chemin sous ses pieds.<br>
+Toujours droit devant, il passe par des villages, reste quelques jours et puis s’en va.<br>
+Un jour, le sort l’oblige à s’arrêter dans l’un d’entre eux.<br>
+Jean va y découvrir le chemin de vie de ses habitants, et trouver peu à peu le sien.
