@@ -6,7 +6,7 @@ duree: 55 min
 public: adultes et enfants à partir de 7 ans
 img: affiche-par-tous-les-chemins.jpg
 layout: projet
-extrait : https://www.youtube.com/embed/IkJ_qeJVAIM
+extrait : https://player.vimeo.com/video/1018257490?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
 plaquette : /medias/dossier-presentation-par-tous-les-chemins.pdf
 test : 
 ---

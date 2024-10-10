@@ -40,7 +40,16 @@
 
             <section>
               <h2>Extrait</h2>
-              <iframe width="420" height="265" src="{{page.extrait}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <!-- <video width="420" controls >
+                <source src="{{page.extrait}}" type="video/mp4">
+                Your browser does not support HTML video.
+              </video> -->
+              <div style="position:relative;">
+                <iframe width="640" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen 
+                
+                src="{{page.extrait}}" type="video/mp4" frameborder="0" allow="autoplay;"  title={{page.name}}></iframe>
+                </div><script src="https://player.vimeo.com/api/player.js"></script>
+              <!-- <iframe width="420" height="265" src="{{page.extrait}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
             </section>
             {% endif %}
       </div>
