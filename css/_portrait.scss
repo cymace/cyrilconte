@@ -1,0 +1,30 @@
+.flex-container {
+    &.wrap{
+        flex-wrap: wrap;
+        align-items: flex-start;
+        img{
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .inline-p{
+            flex: 1;
+            min-width: 450px;
+        }
+    }
+}
+
+.liste-lieux{
+    margin-top: 20px;
+    li{
+        //width: 100%;
+        display: inline-block;
+
+        &:not(:last-child):after {
+            content: "-";
+            margin: 0 10px;
+        }
+    }
+}
+
+

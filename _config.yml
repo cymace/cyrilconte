@@ -1,5 +1,6 @@
 # Site settings
-title: Cyril conte
+title: Cyril Macé
+slogan : Contes et Chansons
 email: bonjour@cyrilconte.com
 sass:
     load_paths:
@@ -16,3 +17,4 @@ collections:
     name: true
     desc: true
     duree: true
+  medias :

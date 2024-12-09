@@ -27,3 +27,25 @@ h2{
     color: black;
 
 }
+
+.titre-section-spectacles{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.titre-section-spectacles:before, .titre-section-spectacles:after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #000;
+    margin: 15px 15px;
+}
+
+
+
+

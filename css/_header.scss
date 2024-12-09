@@ -12,13 +12,18 @@
     margin-right: 20px;
 
     img{
-        width: 120px;
+        width: 80px;
         border-radius: 50%;
     }
 }
 
 .site-title {
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.site-slogan {
+    font-size: 22px;
     font-weight: 800;
 }
 
@@ -39,19 +44,47 @@ nav.site-nav {
     }
 }
 
+
+
+
+.site-header {
+    min-height: 56px;
+    position:  relative;
+;
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    #lien-accueil{
+        display: none;
+    }
+}
+
+.transparent-header .site-header{
+    position:  absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.transparent-header .site-header:hover{
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
 @include media-query($on-palm) {
     .flex-container {
         display: block;
         text-align: center;
     }
+    .site-header {
+        padding: 7px 0px;
+        
+        #visuel-profil {
+            display: none;
+        }
+
+        #lien-accueil{
+            display: inline-block;
+        }
+    }
 }
 
-.site-header {
-    // border-top: 5px solid $grey-color-dark;
-    // border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-    padding-top: 20px;
-}

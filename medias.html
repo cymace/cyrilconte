@@ -1,0 +1,24 @@
+---
+title: medias
+layout: default
+---
+
+  
+
+<ul class="image-gallery">
+  
+  {% for file in site.static_files %}
+  
+  {% if file.path contains 'medias/gallery/thumbnail' %}
+
+  <li>
+    
+    <a data-fslightbox="gallery" data-caption="{{ file.basename }}"  href="/medias/gallery/{{ file.name }}" title="{{ file.name }}"><img data-caption="ddd" src="{{ file.path | relative_url }}" alt="{{ file.name }}" title="{{ file.name }}" /></a></li>
+{% endif %}
+  {% endfor %}
+</ul>
+  
+<script src="/lib/fslightbox.js"></script>
+
+
+

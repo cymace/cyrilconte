@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header" id="site-header" >
 
   <div class="wrapper">
 
@@ -9,7 +9,7 @@
       
       <div>
         <h1 class="site-title">{{ site.title }}</h1>
-        <h2>Histoires logiques et absurdes </h2>
+        <h2 class="site-slogan"> {{ site.slogan }}</h2>
 
         
        
@@ -25,8 +25,10 @@
 
 
       <div class="trigger">
+        <a id="lien-accueil" class="page-link {% if page.title == 'accueil' %} active{% endif %} " href="/" >accueil</a>
         <a class="page-link {% if page.title == 'spectacles' %} active{% endif %} " href="/spectacles" >spectacles</a>
         <a class="page-link {% if page.title == 'portrait' %} active{% endif %}" href="/portrait">portrait</a>
+        <a class="page-link {% if page.title == 'medias' %}  active{% endif %}" href="/medias">medias</a>
         <a class="page-link {% if page.title == 'contact' %}  active{% endif %}" href="/contact">contact</a>
       </div>
     </nav>

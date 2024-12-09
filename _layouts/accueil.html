@@ -3,14 +3,64 @@
 
   {% include head.html %}
 
-  <body>
+  <body id="body" class="transparent-header">
 
-    <img src="/medias/bg.jpg">
     {% include header.html %}
+
+    <div class="swiper">
+      
+      <div class="swiper-wrapper">
+      
+        {% for file in site.static_files %}
+  
+  {% if file.path contains 'medias/gallery/accueil' %}
+
+  <div class="swiper-slide"><a data-fslightbox="gallery" data-caption="{{ file.basename }}"  href="{{ file.path | relative_url }}"></a> <img loading="lazy" class="limit-width" src="{{ file.path | relative_url }}" alt="{{ file.basename }}"><br></div>
+{% endif %}
+  {% endfor %}
+  <div class="swiper-slide link-slide"><a  href="/medias" > voir plus d'images ...</a><br></div>
+        
+        
+      </div>
+       <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/lib/fslightbox.js"></script>
+  
+   <!-- Initialize Swiper -->
+   <script defer>
+      var swiper = new Swiper(".swiper", {
+          slidesPerView: 1,
+          speed: 300,
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          keyboard: {
+            enabled: true,
+          },
+          breakpoints: {
+            780: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+          },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </div>
     
 
     <main class="page-content black-background">
-      <div class="wrapper">
+      <div class="wrapper content">
         {{ content }}
       </div>
     </main>
