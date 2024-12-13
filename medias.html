@@ -13,7 +13,7 @@ layout: default
 
   <li>
     
-    <a data-fslightbox="gallery" data-caption="{{ file.basename }}"  href="/medias/gallery/{{ file.name }}" title="{{ file.name }}"><img data-caption="ddd" src="{{ file.path | relative_url }}" alt="{{ file.name }}" title="{{ file.name }}" /></a></li>
+    <a data-fslightbox="gallery" data-caption="{{ file.basename | slice: 5,200 }}"  href="/medias/gallery/{{ file.name }}" title="{{ file.basename | slice: 5,200 }}"><img src="{{ file.path | relative_url }}" alt="{{ file.basename | slice: 5,200 }}" title="{{ file.basename | slice: 5,200 }}" /></a></li>
 {% endif %}
   {% endfor %}
 </ul>
