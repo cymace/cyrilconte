@@ -1,5 +1,5 @@
-cd /Users/mac/Dev/cyrilconte
+cd /Users/circus/Dev/cyrilconte
 
-jekyll serve --host=0.0.0.0
+bundle exec jekyll serve --host=0.0.0.0
 
 read -p "Entree pour sortir"

@@ -16,11 +16,14 @@ layout: default
             <h2>{{ projet.name }}</h2>
         </a>
         <h3>{{ projet.desc }} - {{projet.duree}} ({{projet.public}})</h3>
+        <!-- {% for tag in projet.tags %}
+            <span>{{tag}}, </span>
+        {% endfor %} -->
         <p>{{ projet.content | markdownify }}</p>
     </section>
 </section>
 </a>
-  
+
 {% endif %}
 {% endfor %}
 
@@ -45,6 +48,6 @@ layout: default
     </section>
 </section>
 </a>
-  
+
 {% endif %}
 {% endfor %}
