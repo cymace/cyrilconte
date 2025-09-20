@@ -6,8 +6,9 @@ duree: 1h10 min
 public: à partir de 6 ans
 img: affiche-contes-mortels.jpg
 layout: projet
-extrait : https://player.vimeo.com/video/1003556982?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+extraitdisabled : https://player.vimeo.com/video/1003556982?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
 status : en cours
+photos: contesmortels
 ---
 La mort a-t-elle toujours existé ?
 Est-ce que les morts vont tous au même endroit ?<br>

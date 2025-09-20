@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    {% include header.html %}
+<body>
+  {% include header.html %}
 
-    
 
-    <main class="page-content">
 
-        <!-- <nav class="wrapper">
+  <main class="page-content">
+
+    <!-- <nav class="wrapper">
             <a href="/spectacles"> voir tous les spectacles</a>
         </nav> -->
-        
-      <div class="wrapper main-section">
-       
-        <section class="flex-container projet">
-          
-            <img src="/medias/projets//{{page.img}}" alt="" width="200">
-              <section>
-                <h2>{{ page.name }}</h2>
-                <h3>{{ page.desc }} - {{page.duree}} ({{page.public}})</h3>
-                <p>{{ page.content | markdownify }}</p>
-                {% if page.plaquette %}
 
-            <div>
-              <img src="/medias/file.svg" width="24">
-               <a href="{{page.plaquette}}" target="_blank">Dossier de présentation</a>
-            </div>
-            {% endif %}
-            </section>
+    <div class="wrapper main-section">
+
+      <section class="flex-container projet">
+
+        <img src="/medias/projets//{{page.img}}" alt="" width="200">
+        <section>
+          <h2>{{ page.name }}</h2>
+          <h3>{{ page.desc }} - {{page.duree}} ({{page.public}})</h3>
+          <p>{{ page.content | markdownify }}</p>
+          {% if page.plaquette %}
+
+          <div>
+            <img src="/medias/file.svg" width="24">
+            <a href="{{page.plaquette}}" target="_blank">Dossier de présentation</a>
+          </div>
+          {% endif %}
         </section>
+      </section>
 
 
-        {% if page.extrait %}
+      {% if page.extrait %}
 
-            <section>
-              <h2>Extrait</h2>
-              <!-- <video width="420" controls >
+      <section>
+        <h2>Extrait</h2>
+        <!-- <video width="420" controls >
                 <source src="{{page.extrait}}" type="video/mp4">
                 Your browser does not support HTML video.
               </video> -->
-              <div style="position:relative;">
-                <iframe width="640" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen 
-                
-                src="{{page.extrait}}" type="video/mp4" frameborder="0" allow="autoplay;"  title={{page.name}}></iframe>
-                </div><script src="https://player.vimeo.com/api/player.js"></script>
-              <!-- <iframe width="420" height="265" src="{{page.extrait}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-            </section>
-            {% endif %}
-      </div>
-      
-    </main>
+        <div style="position:relative;">
+          <iframe width="640" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen
+            src="{{page.extrait}}" type="video/mp4" frameborder="0" allow="autoplay;" title={{page.name}}></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <!-- <iframe width="420" height="265" src="{{page.extrait}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      </section>
+      {% endif %}
+
+      {% if page.photos %}
+
+      <section>
+
+        <ul class="image-gallery">
+
+          {% for file in site.static_files %}
+
+          {% if file.path contains page.photos %}
+
+          <li>
+
+            <a data-fslightbox="gallery" data-caption="{{ file.basename | slice: 5,200 }}"
+              href="/medias/projets/{{page.photos}}/{{ file.name }}" title="{{ file.basename | slice: 5,200 }}"><img
+                src="{{ file.path | relative_url }}" alt="{{ file.basename | slice: 5,200 }}"
+                title="{{ file.basename | slice: 5,200 }}" /></a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+
+        <script src="/lib/fslightbox.js"></script>
+</section>
+
+        {% endif %}
+    </div>
+
+  </main>
 
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+</body>
 
 </html>
