@@ -1,7 +1,7 @@
 ---
 name: Contes mortels
 permalink: /spectacle/contes-mortels
-desc: Spectacle contes en duo
+desc: Spectacle contes en duo avec Adrien Choque
 duree: 1h10 min
 public: à partir de 6 ans
 img: affiche-contes-mortels.jpeg
