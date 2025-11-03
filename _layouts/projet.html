@@ -18,7 +18,11 @@
 
       <section class="flex-container projet">
 
-        <img src="/medias/projets//{{page.img}}" alt="" width="200">
+<a data-fslightbox="gallery" data-caption="{{ file.basename | slice: 5,200 }}"
+              href="/medias/projets/{{page.img}}" title="{{ page.name | slice: 5,200 }}">
+              <img src="/medias/projets/{{page.img}}" alt="" width="200">
+        
+        </a>
         <section>
           <h2>{{ page.name }}</h2>
           <h3>{{ page.desc }} - {{page.duree}} ({{page.public}})</h3>
@@ -72,11 +76,12 @@
           {% endfor %}
         </ul>
 
-        <script src="/lib/fslightbox.js"></script>
+        
 </section>
 
         {% endif %}
     </div>
+    <script src="/lib/fslightbox.js"></script>
 
   </main>
 

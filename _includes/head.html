@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-  <title>Cyril Macé - Contes - {{ page.title }}</title>
+  <title>Cyril Macé - {{ page.title  | slice: 4,200}}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
