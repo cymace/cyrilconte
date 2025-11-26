@@ -3,7 +3,7 @@ name: Contes du foyer - en création
 permalink: /spectacle/contes-du-foyer
 desc: Spectacle conte
 duree: 1h
-public: à partir de 8 ans 
+public: à partir de 10 ans 
 tags: 
     - intimiste
     - adultes
