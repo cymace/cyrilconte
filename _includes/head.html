@@ -5,7 +5,14 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-  <title>Cyril Macé - {{ page.title  | slice: 4,200}}</title>
+  {% if page.layout == "projet" %}
+    <title>Cyril Macé - {{ page.name}}</title>
+  {% endif %}
+
+  {% if page.layout != "projet" %}
+    <title>Cyril Macé - {{ page.title}}</title>
+  {% endif %}
+  
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -17,7 +24,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-  {% endif %}
+   {% endif %}
   
 
 </head>
