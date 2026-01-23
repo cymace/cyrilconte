@@ -5,24 +5,22 @@ layout: accueil
 ## Dernière actus
 
 
-2 spectacles qui tournent en ce moment :
- - en solo : [par tous les chemins](spectacle/par-tous-les-chemins)
- <div style="position:relative;">
-    <iframe width="100%" justify-content="flex-start" webkitallowfullscreen mozallowfullscreen allowfullscreen 
-    src="https://player.vimeo.com/video/1018257490?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&playsinline=false" type="video/mp4" frameborder="0" allow="autoplay;"  title="par tous les chemins"></iframe>
-</div>                
- - en duo (avec Adrien Choque) : [contes mortels](spectacle/contes-mortels)
-
+Prochaines dates :               
+ - samedi 7 février chez Françoise (spectacle chez l'habitant), à Plougonvelin avec [Contes Mortels](spectacle/contes-mortels)
+ (inscription / renseignements : 06.12.15.77.05)
+ 
  <a style="position:relative;" href="spectacle/contes-mortels">
- <img width="300" src="./medias/projets/affiche-contes-mortels.jpeg">
-    <!-- <iframe  width="100%"  webkitallowfullscreen mozallowfullscreen allowfullscreen    
-    src="https://player.vimeo.com/video/1003556982?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&playsinline=false" type="video/mp4" frameborder="0" allow="autoplay;"  title="contes mortels"></iframe> -->
+ <img width="200" src="./medias/projets/affiche-contes-mortels.jpeg">
 </a>
-<script src="https://player.vimeo.com/api/player.js"></script>
-
 <br>
 
-Et bien sûr, toujours possibilité de faire des [histoires et chansons tirées du sac](spectacle/contes-et-chansons-tirees-sac)  
+ - vendredi 18 avril pour la première d'un nouveau spectacle (infos à venir prochainement)  : [Contes Du Foyer](spectacle/contes-du-foyer)
+ 
+ <a style="position:relative;" href="spectacle/contes-du-foyer">
+ <img width="200" src="./medias/projets/contes-du-foyer.jpg">
+</a>
+<br>
+
 
 
 N'hésitez pas à [me contacter](contact) pour plus d'information
