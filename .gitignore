@@ -3,3 +3,8 @@ _site/
 .DS_Store
 _vendor/
 vendor/
+test.html
+Gemfile
+*.lock
+Gemfile
+Gemfile.lock

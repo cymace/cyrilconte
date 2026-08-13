@@ -7,6 +7,7 @@ public: à partir de 5 ans
 img: balade-contee.jpg
 layout: projet
 status : en cours
+photos : baladecontee
 ---
 
 Balade en contes et en musique autour d'histoires et légendes de la mer, du vent et des falaises avec comme fond de scène des points de vue à couper le souffle. <br>

@@ -13,8 +13,38 @@ collections:
     public: true
     output: true
     extrait : true
+  dates :
+    name: true
+    desc: true
+    duree: true
+    public: true
+    output: true
   chansons :
     name: true
     desc: true
     duree: true
   medias :
+months:
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Aout
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+
+plugins:
+  - jekyll-admin
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"

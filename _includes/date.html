@@ -1,0 +1,20 @@
+
+{% assign current_date = site.time | to_date | remove: '-' %}
+{% assign calendarDate = date.path | slice: 7,10  %}
+{% assign dateVar = calendarDate | to_date | remove: '-'%}
+{% assign day = calendarDate | date: "%-d"%} 
+{% assign monthNumber = calendarDate | date: "%-m" | minus: 1 %}
+{% assign month = site.months[monthNumber] %}
+{% assign year = calendarDate | date: "%-Y"%} 
+
+{% if include.future and dateVar >= current_date %}
+    <li>
+      <a href="{{ date.url }}">{{day}} {{month}} {{year}} : {{date.name}}</a>
+    </li>
+{% elsif include.past and dateVar < current_date %}
+    <li>
+      <a href="{{ date.url }}">{{day}} {{month}} {{year}} : {{date.name}}</a>
+    </li>
+{% endif %}
+
+    

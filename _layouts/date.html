@@ -8,6 +8,7 @@
 
 
 
+
   <main class="page-content">
 
     <!-- <nav class="wrapper">
@@ -24,16 +25,24 @@
         
         </a>
         <section>
-          <h2>{{ page.name }}</h2>
-          <h3>{{ page.desc }} - {{page.duree}} ({{page.public}})</h3>
-          <p>{{ page.content | markdownify }}</p>
-          {% if page.plaquette %}
 
-          <div>
-            <img src="/medias/file.svg" width="24">
-            <a href="{{page.plaquette}}" target="_blank">Dossier de présentation</a>
-          </div>
-          {% endif %}
+
+  <a href="/"><- retour</a>
+  <br><br>
+
+
+
+
+          {% assign calendarDate = page.path | slice: 7,10  %}
+          {% assign day = calendarDate | date: "%-d"%} 
+          {% assign monthNumber = calendarDate | date: "%-m" | minus: 1 %}
+          {% assign month = site.months[monthNumber] %}
+          {% assign year = calendarDate | date: "%-Y"%} 
+
+
+          <h2>{{ page.name }}</h2>
+          <h3>le {{day}} {{month}} {{year}} </h3>
+          <p>{{ page.content | markdownify }}</p>
         </section>
       </section>
 
@@ -55,7 +64,7 @@
       </section>
       {% endif %}
 
-      {% if page.photos %}
+      {% if page.permalink %}
 
       <section>
 
@@ -63,12 +72,12 @@
 
           {% for file in site.static_files %}
 
-          {% if file.path contains page.photos %}
+          {% if file.path contains page.permalink %}
 
           <li>
 
             <a data-fslightbox="gallery" data-caption="{{ file.basename}}"
-              href="/medias/projets/{{page.photos}}/{{ file.name }}" title="{{ file.basename }}"><img
+              href="/medias/{{page.permalink}}/{{ file.name }}" title="{{ file.basename }}"><img
                 src="{{ file.path | relative_url }}" alt="{{ file.basename | slice: 5,200 }}"
                 title="{{ file.basename | slice: 5,200 }}" /></a>
           </li>
