@@ -31,6 +31,7 @@ J'ai la conviction que raconter est quelque chose qui est naturel, et j'aime ce 
   - François Debas
   - Diane Pujol
   - Marc Buléon
+  - Michel Hindenoch
   - Amandine Orban de Xivry
   - Catherine Pierloz
   - Ralph Nataf
@@ -46,6 +47,7 @@ J'ai la conviction que raconter est quelque chose qui est naturel, et j'aime ce 
 
 
 {: .liste-lieux }
+  - Festival de contes "la dernière pluie" à Botmeur
   - Festival du conte de Baden (février et juillet 2024)
   - Festial la Bogie d'Or de Redon (octobre 2020 et 2023)
   - Echapées contées, gare du Relecq Kerhuon (octobre 2023)

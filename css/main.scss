@@ -24,8 +24,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    1000px;
 
-$on-palm:          823px;
-$on-laptop:        900px;
+$on-palm:          950px;
+$on-laptop:        950px;
 
 
 
@@ -38,6 +38,12 @@ $on-laptop:        900px;
 // }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin min-media-query($device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
@@ -85,8 +91,8 @@ body > img{
     }
 }
 
-main.black-background{ 
-    font-size : 26px;
+main{ 
+    font-size : 20px;
 }
 
 .button-carrousel-right{ 
@@ -129,6 +135,7 @@ main nav ul{
         }
     }
 }
+
 
 .important{
     text-shadow: 1px 1px black;
