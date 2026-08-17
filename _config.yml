@@ -2,6 +2,7 @@
 title: Cyril Macé
 slogan : Contes et Chansons
 email: bonjour@cyrilconte.com
+url: http://cyrilconte.com
 sass:
     load_paths:
         - css
