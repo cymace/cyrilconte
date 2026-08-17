@@ -1,5 +1,5 @@
 ---
-title: Balade Contee Pointe Raz
+title: Balade Contée à la Pointe Raz
 layout: date
 name: balade contée à la pointe du raz
 permalink: /dates/2026-07-29-balade-contee-pointe-raz
