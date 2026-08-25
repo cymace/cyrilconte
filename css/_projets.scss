@@ -55,5 +55,20 @@ h2{
     display: inline-block;
 }
 
+.video-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include media-query($on-palm) {
+        justify-content: center;
+        iframe{
+        height: auto;
+    }
+    }
+}
 
-
+.video-item{
+    width: calc(50% - 8px);
+    min-width: 320px;
+    
+}

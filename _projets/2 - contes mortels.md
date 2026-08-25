@@ -6,7 +6,9 @@ duree: 1h10 min
 public: à partir de 6 ans
 img: affiche-contes-mortels.jpeg
 layout: projet
-extraitdisabled : https://player.vimeo.com/video/1003556982?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+extraits : 
+- https://player.vimeo.com/video/1199766005?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+- https://player.vimeo.com/video/1220219532?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
 status : en cours
 photos: contesmortels
 ---

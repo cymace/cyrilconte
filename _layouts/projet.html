@@ -38,18 +38,20 @@
       </section>
 
 
-      {% if page.extrait %}
+      {% if page.extraits %}
 
       <section>
-        <h2>Extrait</h2>
-        <!-- <video width="420" controls >
-                <source src="{{page.extrait}}" type="video/mp4">
-                Your browser does not support HTML video.
-              </video> -->
-        <div style="position:relative;">
-          <iframe width="640" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen
-            src="{{page.extrait}}" type="video/mp4" frameborder="0" allow="autoplay;" title={{page.name}}></iframe>
+        <h2>Videos</h2>
+        
+        <div class="video-gallery">
+        {% for extrait in page.extraits %}
+          <div class="video-item" style="position:relative;">
+            <iframe width="640" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen
+              src="{{extrait}}" type="video/mp4" frameborder="0" allow="autoplay;" title={{page.name}}></iframe>
+          </div>
+        {% endfor %}
         </div>
+
         <script src="https://player.vimeo.com/api/player.js"></script>
         <!-- <iframe width="420" height="265" src="{{page.extrait}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
       </section>
@@ -58,6 +60,7 @@
       {% if page.photos %}
 
       <section>
+        <h2>Photos</h2>
 
         <ul class="image-gallery">
 
